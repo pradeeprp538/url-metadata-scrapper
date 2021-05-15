@@ -1,0 +1,23 @@
+{
+  "name": "url-metadata-scraper",
+  "version": "1.0.0",
+  "description": "metadata scraping from a given web page url",
+  "main": "api/url-scraper.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "dev": "serverless invoke local --function scrape",
+    "test": "mocha ./test/*/*.js --timeout 20000",
+    "coverage": "nyc npm run test"
+  },
+  "dependencies": {
+    "object-mapper": "6.2.0",
+    "open-graph-scraper": "^4.8.2"
+  },
+  "devDependencies": {
+    "serverless": "^1.79.0",
+    "mocha": "8.4.0",
+    "chai": "4.3.4",
+    "nyc": "15.1.0"
+  },
+  "author": "Pradeep Raju"
+}

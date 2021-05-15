@@ -1,0 +1,15 @@
+service: metadata-scrapping
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  timeout: 25
+  lambdaHashingVersion: 20201221
+
+functions:
+  scrape:
+    handler: api/url-scraper.scraper
+    events:
+      - httpApi:
+          path: /url-metadata-scraping
+          method: post 

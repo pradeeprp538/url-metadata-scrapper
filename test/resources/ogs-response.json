@@ -1,0 +1,17 @@
+{
+    "twitterCard": "summary",
+    "twitterSiteId": "20793816",
+    "ogDescription": "Amazon.in: Online Shopping India - Buy mobiles, laptops, cameras, books, watches, apparel, shoes and e-Gift Cards. Free Shipping & Cash on Delivery Available.",
+    "ogImage": {
+        "url": "http://g-ec2.images-amazon.com/images/G/31/img14/anywhere/amazon-logo-500500._V327001990_.jpg",
+        "width": null,
+        "height": null,
+        "type": "jpg"
+    },
+    "ogTitle": "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in",
+    "ogLocale": "en-in",
+    "ogUrl": "https://www.amazon.in/",
+    "charset": "utf8",
+    "requestUrl": "https://www.amazon.in/",
+    "success": true
+}
