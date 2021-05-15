@@ -1,15 +1,14 @@
-service: metadata-scrapping
+service: metadata-scraper
 
 provider:
   name: aws
   runtime: nodejs12.x
   timeout: 25
-  lambdaHashingVersion: 20201221
 
 functions:
-  scrape:
+  scraper:
     handler: api/url-scraper.scraper
     events:
       - httpApi:
-          path: /url-metadata-scraping
+          path: /url-metadata-scraper
           method: post 

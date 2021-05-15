@@ -19,7 +19,7 @@ This lambda api function scrapes open graph values from a web page URL. Once you
 ## Invoke the function locally
 
 ```bash
-serverless invoke local --function scrape
+serverless invoke local --function scraper
 ```
 
 Which should result in:
@@ -50,26 +50,30 @@ The expected result should be similar to:
 ```bash
 Serverless: Packaging service...
 Serverless: Excluding development dependencies...
+Serverless: Creating Stack...
+Serverless: Checking Stack create progress...
+........
+Serverless: Stack create finished...
 Serverless: Uploading CloudFormation file to S3...
 Serverless: Uploading artifacts...
-Serverless: Uploading service metadata-scrapping.zip file to S3 (4.44 MB)...
+Serverless: Uploading service metadata-scraper.zip file to S3 (1.43 MB)...
 Serverless: Validating template...
 Serverless: Updating Stack...
 Serverless: Checking Stack update progress...
-................
+..............................
 Serverless: Stack update finished...
 Service Information
-service: metadata-scrapping
+service: metadata-scraper
 stage: dev
 region: us-east-1
-stack: metadata-scrapping-dev
+stack: metadata-scraper-dev
 resources: 11
 api keys:
   None
 endpoints:
-  POST - https://4d3kxv82zb.execute-api.us-east-1.amazonaws.com/url-metadata-scraping
+  POST - https://7da1u4xm17.execute-api.us-east-1.amazonaws.com/url-metadata-scraper
 functions:
-  scrape: metadata-scrapping-dev-scrape
+  scraper: metadata-scraper-dev-scraper
 layers:
   None
 ```
@@ -79,7 +83,7 @@ layers:
 or as send an HTTP request directly to the endpoint using a tool like postman
 
 ```bash
-curl https://XXXXXXX.execute-api.us-east-1.amazonaws.com/url-metadata-scraping
+curl https://XXXXXXX.execute-api.us-east-1.amazonaws.com/url-metadata-scraper
 ```
 
 ## Unit Tests
