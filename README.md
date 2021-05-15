@@ -10,7 +10,7 @@ authorName: 'Pradeep Raju'
 -->
 # URL Metadata Scrapper
 
-This lambda api function example demonstrates how to scrape open graph values from a web page URL. Once you ping it with a URL, it will reply with the open graph metadata.'
+This lambda api function scrapes open graph values from a web page URL. Once you ping it with a URL, it will reply with the open graph metadata.'
 
 ## Use Cases
 
@@ -76,7 +76,7 @@ layers:
 
 ## Usage
 
-or as send an HTTP request directly to the endpoint using a tool like curl
+or as send an HTTP request directly to the endpoint using a tool like postman
 
 ```bash
 curl https://XXXXXXX.execute-api.us-east-1.amazonaws.com/url-metadata-scraping
@@ -92,7 +92,7 @@ mocha ./test/*/*.js --timeout 20000
 
 ## Test Coverage
 
-you can know the test case coverage with the command as below
+you can know the code coverage with the command as below
 
 ```bash
 nyc mocha ./test/*/*.js --timeout 20000
