@@ -80,10 +80,20 @@ layers:
 
 ## Usage
 
-or as send an HTTP request directly to the endpoint using a tool like postman
+or as send an HTTP POST request directly to the endpoint using a tool like postman
+
+Sample input payload:
 
 ```bash
-curl https://XXXXXXX.execute-api.us-east-1.amazonaws.com/url-metadata-scraper
+{
+    "url" : "https://www.npmjs.com/package/open-graph-scraper"
+}
+```
+Endpoint:
+
+```bash
+
+https://XXXXXXX.execute-api.us-east-1.amazonaws.com/url-metadata-scraper
 ```
 
 ## Unit Tests
